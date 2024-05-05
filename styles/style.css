@@ -8,18 +8,21 @@ White: #FFF
 */
 
 html {
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
 .navbar img {
   width: 148px;
@@ -27,19 +30,141 @@ html {
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
 }
 
-.navbar ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style-type: none;
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
 }
 
 .navbar ul li {
-    margin: 0px 24px;
-    font-size: 18px;
+  margin: 0px 24px;
+  font-size: 24px;
+}
+
+.landing-section {
+  background-image: url("../images/landing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  background-position: center center;
+}
+
+h1,
+h2 {
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 200px;
+  font-size: 64px;
+  margin: 0;
+}
+
+h2 {
+  font-weight: lighter;
+  font-size: 32px;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-section hr {
+  height: 1px;
+  width: 384px;
+  border-bottom: 3px solid #00b172;
+}
+
+.info-section-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 180px 10px;
+}
+
+.info-section-cards img {
+  max-width: 24%;
+}
+
+h3 {
+  font-size: 44px;
+  margin-bottom: 3px;
+  color: #1A1A1A;
+}
+
+.songs-info, .quality-info, .stream-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+h4 {
+  font-size: 32px;
+  color: #00b172;
+  font-weight: bolder;
+  margin: 24px;
+}
+
+.info-section-cards p {
+  font-size: 28px;
+  color: #1A1A1A;
+  font-weight: lighter;
+  padding: 0 148px;
+}
+
+.app-section {
+  background-color: #00b172;
+  display: flex;
+  padding: 124px 50px;
+  margin: 0 84px 84px;
+  gap: 10%;
+  background-image: url("../images/spotify-icon-white.png");
+  background-size: 140px 140px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.app-section img{
+  max-width: 400px;
+  max-height: auto;
+  margin-top: 100px;
+}
+
+h5, h6 , .app-info-section p {
+  color: white;
+}
+
+h5 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.app-section hr {
+  height: 1px;
+  width: 588px;
+  border-bottom: 3px solid white;
+  margin: 0;
+}
+
+h6 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.app-section p {
+  font-size: 25px;
+  font-weight: lighter;
+  padding-right: 40%;
 }
